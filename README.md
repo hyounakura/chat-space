@@ -21,6 +21,7 @@
 ### Association
 - has_many  :users, through: :user_groups
 - has_many  :comments
+- has_many  :user_groups
 
 
 ## Users_Groupsテーブル
