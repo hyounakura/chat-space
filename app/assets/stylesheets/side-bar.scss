@@ -43,13 +43,16 @@
     background-color: #2f3e51;
     &__contents{
       padding: 20px 20px 40px 20px;
-      color: #ffffff;
-      &__top{
-      font-size: 15px;
-      margin-bottom: 5px;
-      }
-      &__btn{
-      font-size: 11px;
+      .linkto{
+        text-decoration: none;
+        color: #ffffff;
+          &__top{
+          font-size: 15px;
+          margin-bottom: 5px;
+          }
+          &__btn{
+          font-size: 11px;
+          }
       }
     }
   }
