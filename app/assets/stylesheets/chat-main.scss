@@ -66,43 +66,46 @@
     padding: 0 40px;
     display: flex;
     align-items: center;
-    &__content{
-      height: 50px;
+    .Form{
       width: 100%;
-      display: flex;
-      align-items: center;
-      &__message{
-        height: 100%;
+      .Chat-main__message-form__content{
+        height: 50px;
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        background-color: #ffffff;
-        position: relative;
-        &__left{
+        &__message{
           height: 100%;
           width: 100%;
-          border: none;
-          padding: 0 10px;
-        }
-        &__right{
-          margin-left: 10px;
-          font-size: 25px;
-          position: absolute;
-          right: 10px;
-          .file{
-            display: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #ffffff;
+          position: relative;
+          &__left{
+            height: 100%;
+            width: 100%;
+            border: none;
+            padding: 0 10px;
+          }
+          &__right{
+            margin-left: 10px;
+            font-size: 25px;
+            position: absolute;
+            right: 10px;
+            .file{
+              display: none;
+            }
           }
         }
-      }
-      &__send{
-        height: 100%;
-        padding: 0 30px;
-        color: #fff;
-        font-size: 16px;
-        background-color: #38aef0;
-        border: none;
-        margin-left: 15px;
+        &__send{
+          height: 100%;
+          padding: 0 30px;
+          color: #fff;
+          font-size: 16px;
+          background-color: #38aef0;
+          border: none;
+          margin-left: 15px;
+        }
       }
     }
   }
