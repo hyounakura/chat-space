@@ -1,0 +1,24 @@
+.Chat-main
+  .Chat-main__group-info
+    .Chat-main__group-info__content
+      .Chat-main__group-info__content__left
+        .Chat-main__group-info__content__left__top
+          = @group.name
+        .Chat-main__group-info__content__left__btn
+          Member :
+          - @group.users.each do |user|
+            = user.name
+      = link_to edit_group_path(@group.id), class: "Chat-main__group-info__content__right" do
+        .edit
+          edit
+  .Chat-main__message-list
+    = render partial: 'message', collection: @messages
+  .Chat-main__message-form
+  = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
+    .Chat-main__message-form__content
+      .Chat-main__message-form__content__message
+        = f.text_field :message, class: 'Chat-main__message-form__content__message__left', placeholder: "type a message"
+        = f.label :image, class: "Chat-main__message-form__content__message__right" do
+          = icon('fas', 'image')
+          = f.file_field :image, class: "file"
+      = f.submit 'Send', class: 'Chat-main__message-form__content__send'
