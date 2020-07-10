@@ -39,6 +39,7 @@
   &__message-list{
     height: calc(100% - 190px);
     background-color: #fafafa;
+    overflow: scroll;
     &__contents{
       padding: 35px 0 46px 40px;
       &__top{
@@ -81,13 +82,17 @@
           justify-content: space-between;
           background-color: #ffffff;
           position: relative;
-          &__left{
+          .field_with_errors{
             height: 100%;
             width: 100%;
-            border: none;
-            padding: 0 10px;
+            .Chat-main__message-form__content__message__left{
+              height: 100%;
+              width: 100%;
+              border: none;
+              padding: 0 10px;
+            }
           }
-          &__right{
+          .Chat-main__message-form__content__message__right{
             margin-left: 10px;
             font-size: 25px;
             position: absolute;

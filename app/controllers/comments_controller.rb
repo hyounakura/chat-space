@@ -9,7 +9,9 @@ class CommentsController < ApplicationController
   def create
     @message = @group.comments.new(message_params)
     if @message.save
-      redirect_to group_comments_path(@group), notice: 'メッセージが送信されました'
+      respond_to do |format|
+        format.json
+      end
     else
       @messages = @group.comments.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください。'
