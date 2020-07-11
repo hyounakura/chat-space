@@ -82,15 +82,11 @@
           justify-content: space-between;
           background-color: #ffffff;
           position: relative;
-          .field_with_errors{
+          .Chat-main__message-form__content__message__left{
             height: 100%;
             width: 100%;
-            .Chat-main__message-form__content__message__left{
-              height: 100%;
-              width: 100%;
-              border: none;
-              padding: 0 10px;
-            }
+            border: none;
+            padding: 0 10px;
           }
           .Chat-main__message-form__content__message__right{
             margin-left: 10px;
