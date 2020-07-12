@@ -26,7 +26,7 @@ $(function(){
     $(".ChatMembers").append(html);
   }
 
-  $('.SettingGroupForm__input').on('keyup', function(){
+  $('#UserSearch__field').on('keyup', function(){
     let input = $(this).val();
     $.ajax({
       type: "GET",
